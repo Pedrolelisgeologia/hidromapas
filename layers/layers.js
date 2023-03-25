@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-ol.proj.get("EPSG:4326").setExtent([-46.617129, -18.335964, -37.331878, -8.532729]);
+ol.proj.get("EPSG:4326").setExtent([-39.842356, -13.389936, -37.142088, -11.971377]);
 var wms_layers = [];
 
 var format_Hidrogeologia_0 = new ol.format.GeoJSON();
@@ -32,7 +32,7 @@ var lyr_cidade_1 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_cidade_1, 
                 style: style_cidade_1,
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/cidade_1.png" /> cidade'
             });
 var format_capital_2 = new ol.format.GeoJSON();
@@ -46,7 +46,7 @@ var lyr_capital_2 = new ol.layer.Vector({
                 declutter: true,
                 source:jsonSource_capital_2, 
                 style: style_capital_2,
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/capital_2.png" /> capital'
             });
 var format_PoosTubulares_3 = new ol.format.GeoJSON();
